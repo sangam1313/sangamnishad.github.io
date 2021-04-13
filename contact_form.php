@@ -1,24 +1,16 @@
+
 <?php
-    $name = $_POST['name'];
-    $visitor_email = $_POST['email'];
-    $message = $_POST['message'];
+    if(!empty($_POST['send'])){
+        $fname = $_POST['fname'];
+        $lname = $_POST['lname'];
+        $email = $_POST['email'];
+        $subject = $_POST['sub'];
+        $message = $_POST['msg'];
 
-    $email_from = 'sangamnishad1313@gmail.com';
-
-    $email_subject = "New Form Submission";
-
-    $email_body = "User Name: $name.\n".
-                    "User Email: $visitor_email.\n".
-                    "User Message: $message.\n";
-    $to = "sangamnishad13@gmail.com";
-
-    $headers = "from: $email_form \r\n";
-
-    $headers .= "Reply-To : $visitor_email \r\n";
-    
-    mail($to,$email_subject,$email_body,$headers);
-
-    header("location: index.html");
-
-
+        $toEmail = "sangamnishad1313@gmail.com";
+        $mailheaders = "From: ".$fname." ".$lname."<".$email. ">\r\n";
+        if(mail($toEmail, $subject, $message, $mailheaders)){
+            header("location: index.html");
+        }
+    }
 ?>
