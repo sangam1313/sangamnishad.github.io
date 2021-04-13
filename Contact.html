@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/social.css"> -->
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+        <div class="header">
+		    <nav> 
+          <input id="nav-toggle" type="checkbox">
+            <div class="logo"><strong>Sangam Nishad</strong></div>
+            <ul class="links">
+		      	<li><a href="index.html">About</a></li>
+		      	<li><a href="Resume.html">Resume</a></li>
+		      	<li><a href="project.html">Projects</a></li>
+		      	<li><a href="Contact.html">Contact</a></li>
+          </ul>
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+        </nav>
+      </div>
+
+      <div class="container">
+        <div class="resume">
+          <h1>Let's talk</h1>
+          <hr>
+          <hr>
+        </div>
+
+        <div class="contact-form">
+          <form id="contact-form" method="POST" action="contact_form.php">
+            <label for="fname">First Name</label><br>
+            <input type="text" name="Fname" class="form-control" required><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" name="lname" class="form-control" required><br>
+
+            <label for="email">Email</label><br>
+            <input type="text" name="email" class="form-control" required><br>
+
+            <label for="sub">Subject</label>
+            <input type="text" class="form-control" name="sub"><br>
+
+            <label for="msg">Message</label>
+            <textarea name="msg" class="form-control" rows="2"></textarea><br>
+
+           <center> <button type="submit" class="defaultbtn" id="button6" value="SEND">SEND</button></center>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div class="call">
+          <strong>Call</strong>
+          <p>+919967581103</p>
+        </div>
+        <div class="write">
+          <strong>Write</strong>
+          <p>Sangamnishad13@gmail.com</p>
+        </div>
+        <div class="follow">
+          <strong>follow</strong>
+          <div class="social-footer-icons">
+              <div class="sicon"><a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+              <div class="sicon"><a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+              <div class="sicon"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a></div>
+              <div class="sicon"><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
